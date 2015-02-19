@@ -1,5 +1,5 @@
 name: InspireUHC
-version: 5.3.83
+version: 5.4.3
 description: A full featured UHC plugin used privately for Inspire UHC events.
 author: Nico | RogueMC9000
 main: me.roguemc9000.uhc.Core
