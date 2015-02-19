@@ -1,0 +1,29 @@
+name: InspireUHC
+version: 5.3.83
+description: A full featured UHC plugin used privately for Inspire UHC events.
+author: Nico | RogueMC9000
+main: me.roguemc9000.uhc.Core
+commands:
+  team:
+    aliases: [ts, t]
+  setteam:
+    aliases: [st]
+  setname:
+    aliases: [sn]
+  border:
+    aliases: [b, sb]
+  list:
+  rules:
+  start:
+  removeplayer:
+    aliases: [rp]
+  randomize:
+    aliases: [r]
+  heal:
+  setrule:
+    aliases: [sr]
+  donate:
+    aliases: [d]
+  pause:
+    aliases: [p]
+  settime:
