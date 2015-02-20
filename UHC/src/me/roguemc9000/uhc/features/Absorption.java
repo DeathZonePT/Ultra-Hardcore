@@ -6,7 +6,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Created by Nico on 12/1/2014.
+ * Code written by Nico Bentley.
+ * Raw code not to be sold, redistributed,
+ * or edited by anyone else without written consent
+ * from Nico Bentley.
+ *
+ * (C) All Rights Reserved
  */
 public class Absorption implements Feature, Runnable {
 

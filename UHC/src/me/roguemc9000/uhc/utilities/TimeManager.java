@@ -18,7 +18,12 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Created by Nico on 12/2/2014.
+ * Code written by Nico Bentley.
+ * Raw code not to be sold, redistributed,
+ * or edited by anyone else without written consent
+ * from Nico Bentley.
+ * <p/>
+ * (C) All Rights Reserved
  */
 public class TimeManager implements Runnable {
 
@@ -151,10 +156,8 @@ public class TimeManager implements Runnable {
                                 "IN " + ChatColor.DARK_RED +
                                 "" + ChatColor.BOLD + "5 " + ChatColor.RED + "MINUTES!!!");
                 }
-            }
 
-            //Scoreboard and BarAPI
-            if (state != GameState.WARMUP) {
+                //Scoreboard and BarAPI
                 if (Core.getFeature("teaming").isEnabled()) {
                     for (UHCTeam team : Core.getPlaying()) {
                         Scoreboard board = Core.getBoard(team);
@@ -244,9 +247,7 @@ public class TimeManager implements Runnable {
             if (hours == 1 && mins == 0 && secs == 0) {
                 Core.run(new Compass());
                 Core.run(new CompassSetter());
-            }
 
-            if (hours == 1 && mins == 0 && secs == 0) {
                 if (Core.getFeature("eternalday").isEnabled())
                     Bukkit.broadcastMessage(Core.getPrefix() + "It has been 60 minutes and is now eternally day!");
                 if (Core.getFeature("gotohell").isEnabled()) {

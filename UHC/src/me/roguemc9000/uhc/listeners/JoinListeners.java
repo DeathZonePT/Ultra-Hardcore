@@ -22,7 +22,7 @@ import java.util.HashMap;
  */
 public class JoinListeners implements Listener {
 
-    HashMap<String, Integer> times = new HashMap();
+    HashMap<String, Integer> times = new HashMap<String, Integer>();
     private Core core;
 
     public JoinListeners(Core instance) {
@@ -92,7 +92,7 @@ public class JoinListeners implements Listener {
                 public void run() {
                     if (times.containsKey(event.getPlayer().getName()) && Core.getSeconds() - times.get(event
                             .getPlayer().getName()) >= 600) {
-                        Core.getWhitelist().remove(event.getPlayer().getName());
+                        Core.getWhitelist().remove(event.getPlayer().getUniqueId());
                         Bukkit.broadcastMessage(Core.getPrefix() + event.getPlayer().getName() +
                                 " has been gone for 10 minutes and has been eliminated!");
                     }

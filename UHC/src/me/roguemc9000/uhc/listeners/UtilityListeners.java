@@ -155,6 +155,9 @@ public class UtilityListeners implements Listener {
             else event.setFormat(ChatColor.GREEN + "OP HOST " + event.getPlayer().getName() + ": " + ChatColor.RED +
                         event.getMessage());
 
+        } else if (locked && !event.getPlayer().isOp()) {
+            event.setCancelled(true);
+            event.getPlayer().sendMessage(Core.getPrefix() + "Chat is currently locked!");
         } else if (!Core.getWhitelist().contains(event.getPlayer().getUniqueId())) {
             event.setFormat(ChatColor.GRAY + event.getPlayer().getName() + ": " + ChatColor.WHITE + event.getMessage());
             for (Player player : Bukkit.getOnlinePlayers())

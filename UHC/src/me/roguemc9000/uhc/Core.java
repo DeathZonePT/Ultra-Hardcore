@@ -218,6 +218,7 @@ public class Core extends JavaPlugin {
         getCommand("setrule").setExecutor(new SetRule());
         getCommand("pause").setExecutor(new Pause());
         getCommand("settime").setExecutor(new SetTime());
+        getCommand("chatlock").setExecutor(new ChatLock());
 
         Bukkit.getPluginManager().registerEvents(new DeathListener(this), this);
         Bukkit.getPluginManager().registerEvents(new JoinListeners(this), this);

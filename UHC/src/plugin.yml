@@ -27,3 +27,5 @@ commands:
   pause:
     aliases: [p]
   settime:
+  chatlock:
+    aliases: [lock]
