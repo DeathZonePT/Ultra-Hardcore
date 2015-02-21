@@ -52,6 +52,7 @@ public class JoinListeners implements Listener {
                 player.getInventory().addItem(is);
                 player.setAllowFlight(true);
                 player.setGameMode(GameMode.ADVENTURE);
+                player.teleport(Core.getSpawn(player.getWorld()));
             } else if (Core.getFeature("teaming").isEnabled())
                 team = Core.getTeam(player).getColor() + Core.getTeam(player).getName();
 
